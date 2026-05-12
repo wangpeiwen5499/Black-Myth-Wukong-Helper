@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wandering Wight - Boss Guide | Black Myth: Wukong Guide</title>
+  <meta name="description" content="Complete strategy guide for the Wandering Wight boss in Black Myth: Wukong. Learn attack patterns, weaknesses, phase transitions, and recommended builds.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600&family=Noto+Sans+SC:wght@400;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar__logo">Wukong Guide</a>
+    <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="navbar__links">
+      <li>
+        <a href="../walkthrough/chapter-1.html">
+          <span data-lang="en" lang="en">Walkthrough</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">流程攻略</span>
+        </a>
+      </li>
+      <li>
+        <a href="../bosses/index.html">
+          <span data-lang="en" lang="en">Bosses</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">Boss</span>
+        </a>
+      </li>
+      <li>
+        <div class="lang-toggle">
+          <button class="lang-toggle__btn" data-lang="en">EN</button>
+          <button class="lang-toggle__btn" data-lang="zh">中文</button>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb section">
+      <a href="../index.html">
+        <span data-lang="en" lang="en">Home</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">首页</span>
+      </a>
+      <span> &rsaquo; </span>
+      <a href="index.html">
+        <span data-lang="en" lang="en">Bosses</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">Boss</span>
+      </a>
+      <span> &rsaquo; </span>
+      <span data-lang="en" lang="en">Wandering Wight</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">游僧</span>
+    </div>
+
+    <div class="boss-detail">
+
+      <!-- Boss Header -->
+      <div class="boss-header">
+        <div class="boss-header__portrait">
+          <span>&#x1F9DF;</span>
+        </div>
+        <div class="boss-header__info">
+          <h1>
+            <span data-lang="en" lang="en">Wandering Wight</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">游僧</span>
+          </h1>
+          <p class="boss-name-cn">
+            <span data-lang="en" lang="en">Optional Boss &mdash; Forest of Wolves</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">可选Boss &mdash; 狼之森林</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats Card -->
+      <div class="stats-card">
+        <div class="stats-card__item">
+          <div class="stats-card__label">
+            <span data-lang="en" lang="en">HP</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">生命值</span>
+          </div>
+          <div class="stats-card__value">~1500</div>
+        </div>
+        <div class="stats-card__item">
+          <div class="stats-card__label">
+            <span data-lang="en" lang="en">Weakness</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">弱点</span>
+          </div>
+          <div class="stats-card__value">
+            <span data-lang="en" lang="en">Fire</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">火</span>
+          </div>
+        </div>
+        <div class="stats-card__item">
+          <div class="stats-card__label">
+            <span data-lang="en" lang="en">Resistance</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">抗性</span>
+          </div>
+          <div class="stats-card__value">
+            <span data-lang="en" lang="en">Physical</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">物理</span>
+          </div>
+        </div>
+        <div class="stats-card__item">
+          <div class="stats-card__label">
+            <span data-lang="en" lang="en">Chapter</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">章节</span>
+          </div>
+          <div class="stats-card__value">
+            <span data-lang="en" lang="en">1</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">第一章</span>
+          </div>
+        </div>
+        <div class="stats-card__version">
+          <span data-lang="en" lang="en">Data accurate for v1.0.8</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">数据适用于 v1.0.8</span>
+        </div>
+      </div>
+
+      <!-- Strategy Section -->
+      <section class="strategy-section">
+        <h2>
+          <span data-lang="en" lang="en">Strategy / 打法策略</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">打法策略</span>
+        </h2>
+
+        <div class="phase-block">
+          <h3 class="phase-block__title">
+            <span data-lang="en" lang="en">Phase 1 / 阶段一</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">阶段一</span>
+          </h3>
+          <p>
+            <span data-lang="en" lang="en">The Wandering Wight uses slow but powerful overhead swings. His attacks have long reach and high damage, but the wind-ups are generous. Dodge sideways (not backward) to avoid his horizontal sweeps. Watch carefully for his grab attack: it has a long wind-up where he raises both arms, but it tracks aggressively. Dodge at the last moment toward his side to escape. Punish his recovery frames with 2-3 light attacks, then reposition.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">游僧使用缓慢但强力的过头挥击。他的攻击距离远、伤害高，但前摇较长。向侧面闪避（而非后退）来躲避横扫。注意他的抓取攻击：他会举起双臂，前摇很长但追踪性极强。在最后一刻向他的侧面闪避来逃脱。抓住他的收招硬直打2-3下轻攻击，然后重新站位。</span>
+          </p>
+        </div>
+
+        <div class="phase-block">
+          <h3 class="phase-block__title">
+            <span data-lang="en" lang="en">Phase 2 / 阶段二 (HP &lt; 50%)</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">阶段二 (HP &lt; 50%)</span>
+          </h3>
+          <p>
+            <span data-lang="en" lang="en">Below 50% HP, the Wandering Wight becomes enraged. His attack speed increases significantly and combo strings get longer. He adds a rapid triple-slam sequence that can catch dodge rolls. Keep your distance during his enrage burst and wait for recovery windows. Use the Immobilize spell to freeze him during his faster combos, then unload heavy attacks. Spirit abilities that deal stagger damage are very effective during this phase.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">血量降到50%以下时，游僧进入暴怒状态。攻击速度大幅提升，连招变长。他会新增一套快速三连砸地，容易打断闪避。在他暴怒爆发期间保持距离，等待收招空隙。使用定身术冻结他的高速连招，然后释放重攻击。造成削韧伤害的精魄技能在此阶段非常有效。</span>
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <strong><span data-lang="en" lang="en">Recommended Gear</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">推荐装备</span></strong><br>
+          <span data-lang="en" lang="en">Use a <strong>Fire Staff</strong> (火杖) to exploit his fire weakness. Pair it with a dodge-focused build that maximizes i-frames. The Immobilize spell (定身术) is highly effective for creating damage windows in both phases.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">使用<strong>火杖</strong>来针对他的火焰弱点。搭配以闪避为核心的构筑，最大化无敌帧。定身术在两个阶段都非常适合创造输出窗口。</span>
+        </div>
+      </section>
+
+      <!-- Quick Tips -->
+      <div class="quick-tips">
+        <h3>
+          <span data-lang="en" lang="en">Quick Tips / 实用技巧</span><span data-lang="zh-CN" lang="zh-CN" style="display:none">实用技巧</span>
+        </h3>
+        <ul>
+          <li>
+            <span data-lang="en" lang="en"><strong>Don't fight early.</strong> The Wandering Wight is an optional boss. If you're struggling, come back after leveling up and upgrading your gear.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none"><strong>不要过早挑战。</strong>游僧是可选Boss。如果打不过，先去升级和强化装备后再回来。</span>
+          </li>
+          <li>
+            <span data-lang="en" lang="en"><strong>Dodge into attacks, not away.</strong> Many of his swings have forward momentum. Dodging toward him places you at his flank where follow-up hits miss.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none"><strong>向攻击方向闪避，而非远离。</strong>他的很多挥击都有前冲惯性。向他闪避可以绕到侧面，后续攻击会落空。</span>
+          </li>
+          <li>
+            <span data-lang="en" lang="en"><strong>Use Spirit abilities between phases.</strong> Save your Spirit charge for the Phase 2 transition to stagger him before he builds momentum.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none"><strong>在阶段转换时使用精魄技能。</strong>把精魄充能留到第二阶段开始时，在他加速之前打断他。</span>
+          </li>
+          <li>
+            <span data-lang="en" lang="en"><strong>Circle to his left.</strong> Most of his right-hand swings have a blind spot on his left side. Stay there when in melee range.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none"><strong>绕到他的左侧。</strong>他的右手挥击在左侧有盲区。近身时保持在那个位置。</span>
+          </li>
+          <li>
+            <span data-lang="en" lang="en"><strong>Reward: Wandering Wight Spirit.</strong> Absorbing his Spirit grants a powerful ground-slam ability with high stagger, useful throughout the entire game.</span><span data-lang="zh-CN" lang="zh-CN" style="display:none"><strong>奖励：游僧精魄。</strong>吸收他的精魄可获得强力地面重击技能，削韧极高，在整个游戏中都有用。</span>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /.boss-detail -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Black Myth: Wukong Guide. All rights reserved.</p>
+    <p class="footer__disclaimer">This is a fan-made guide. Not affiliated with Game Science. Black Myth: Wukong is a trademark of Game Science.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
