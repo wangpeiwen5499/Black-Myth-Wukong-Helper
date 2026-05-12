@@ -125,10 +125,6 @@ img {
   transition: box-shadow var(--transition-fast);
 }
 
-.navbar--scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-}
-
 .navbar__logo {
   font-family: 'Cinzel', 'Noto Serif SC', Georgia, 'SimSun', 'Times New Roman', 'STSong', serif;
   color: var(--accent-gold);

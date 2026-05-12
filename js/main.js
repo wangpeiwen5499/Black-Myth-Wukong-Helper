@@ -9,6 +9,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     initLanguageToggle();
     initMobileMenu();
+    initTocToggle();
     initNavbarScroll();
   });
 
@@ -94,6 +95,20 @@
         hamburger.setAttribute('aria-expanded', 'false');
       });
     }
+  }
+
+  /* ------------------------------------------------------------------------
+     Walkthrough TOC Toggle (mobile)
+     ------------------------------------------------------------------------ */
+  function initTocToggle() {
+    var tocToggle = document.querySelector('.toc-toggle');
+    var tocSidebar = document.querySelector('.toc-sidebar');
+    if (!tocToggle || !tocSidebar) return;
+
+    tocToggle.addEventListener('click', function () {
+      var isOpen = tocSidebar.classList.toggle('open');
+      tocToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
   }
 
   /* ------------------------------------------------------------------------
