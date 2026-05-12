@@ -23,7 +23,7 @@
       lang = saved;
     } else {
       var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      lang = browserLang.indexOf('zh') === 0 ? 'zh' : 'en';
+      lang = browserLang.indexOf('zh') === 0 ? 'zh-CN' : 'en';
     }
 
     setLanguage(lang);
@@ -40,13 +40,16 @@
   }
 
   function setLanguage(lang) {
-    localStorage.setItem('bmw-lang', lang);
-    document.documentElement.lang = lang;
+    // Normalize: treat 'zh' as 'zh-CN' for consistency
+    var normalizedLang = lang.indexOf('zh') === 0 ? 'zh-CN' : 'en';
+
+    localStorage.setItem('bmw-lang', normalizedLang);
+    document.documentElement.lang = normalizedLang;
 
     var elements = document.querySelectorAll('[data-lang]');
     for (var i = 0; i < elements.length; i++) {
       var el = elements[i];
-      if (el.getAttribute('data-lang') === lang) {
+      if (el.getAttribute('data-lang') === normalizedLang) {
         el.style.display = '';
         el.setAttribute('aria-hidden', 'false');
       } else {
@@ -58,10 +61,14 @@
     var buttons = document.querySelectorAll('.lang-toggle__btn');
     for (var j = 0; j < buttons.length; j++) {
       var btn = buttons[j];
-      if (btn.getAttribute('data-lang') === lang) {
-        btn.classList.add('lang-toggle__btn--active');
+      var btnLang = btn.getAttribute('data-lang');
+      // Match 'zh' button to 'zh-CN' content
+      var isMatch = btnLang === normalizedLang ||
+        (btnLang === 'zh' && normalizedLang === 'zh-CN');
+      if (isMatch) {
+        btn.classList.add('active');
       } else {
-        btn.classList.remove('lang-toggle__btn--active');
+        btn.classList.remove('active');
       }
     }
   }
@@ -70,14 +77,13 @@
      Mobile Hamburger Menu
      ------------------------------------------------------------------------ */
   function initMobileMenu() {
-    var hamburger = document.querySelector('.hamburger');
+    var hamburger = document.querySelector('.navbar__hamburger');
     var navLinks = document.querySelector('.navbar__links');
 
     if (!hamburger || !navLinks) return;
 
     hamburger.addEventListener('click', function () {
       var isOpen = navLinks.classList.toggle('open');
-      hamburger.classList.toggle('hamburger--open', isOpen);
       hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
@@ -85,7 +91,6 @@
     for (var i = 0; i < links.length; i++) {
       links[i].addEventListener('click', function () {
         navLinks.classList.remove('open');
-        hamburger.classList.remove('hamburger--open');
         hamburger.setAttribute('aria-expanded', 'false');
       });
     }
@@ -100,9 +105,9 @@
 
     function onScroll() {
       if (window.scrollY > 10) {
-        navbar.classList.add('navbar--scrolled');
+        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.5)';
       } else {
-        navbar.classList.remove('navbar--scrolled');
+        navbar.style.boxShadow = 'none';
       }
     }
 
