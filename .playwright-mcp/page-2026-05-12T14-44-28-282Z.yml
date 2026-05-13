@@ -1,0 +1,67 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation [ref=e3]:
+    - link "Wukong Guide" [ref=e4] [cursor=pointer]:
+      - /url: index.html
+    - button "Toggle menu" [active] [ref=e5]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - heading [level=1]
+      - paragraph
+    - generic [ref=e13]:
+      - heading [level=2] [ref=e14]
+      - generic [ref=e15]:
+        - link "★★☆☆☆" [ref=e16] [cursor=pointer]:
+          - /url: walkthrough/chapter-1.html
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e17]: ★★☆☆☆
+        - link "★★★☆☆" [ref=e18] [cursor=pointer]:
+          - /url: "#"
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e19]: ★★★☆☆
+        - link "★★★☆☆" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e21]: ★★★☆☆
+        - link "★★★★☆" [ref=e22] [cursor=pointer]:
+          - /url: "#"
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e23]: ★★★★☆
+        - link "★★★★☆" [ref=e24] [cursor=pointer]:
+          - /url: "#"
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e25]: ★★★★☆
+        - link "★★★★★" [ref=e26] [cursor=pointer]:
+          - /url: "#"
+          - heading [level=3]
+          - paragraph
+          - generic [ref=e27]: ★★★★★
+    - generic [ref=e28]:
+      - heading [level=2] [ref=e29]
+      - generic [ref=e30]:
+        - link [ref=e31] [cursor=pointer]:
+          - /url: bosses/wandering-wight.html
+          - heading [level=3]
+          - paragraph
+        - link [ref=e32] [cursor=pointer]:
+          - /url: bosses/elder-jinchi.html
+          - heading [level=3]
+          - paragraph
+        - link [ref=e33] [cursor=pointer]:
+          - /url: bosses/black-bear-spirit.html
+          - heading [level=3]
+          - paragraph
+    - generic [ref=e34]:
+      - heading [level=2]
+      - paragraph
+      - link [ref=e35] [cursor=pointer]:
+        - /url: walkthrough/chapter-1.html
+  - contentinfo [ref=e36]:
+    - paragraph [ref=e37]: "© 2026 Black Myth: Wukong Guide. All rights reserved."
+    - paragraph [ref=e38]: "This is a fan-made guide. Not affiliated with Game Science. Black Myth: Wukong is a trademark of Game Science."

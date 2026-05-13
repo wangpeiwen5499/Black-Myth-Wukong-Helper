@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation [ref=e3]:
+    - link "Wukong Guide" [ref=e4] [cursor=pointer]:
+      - /url: ../index.html
+    - button "Toggle menu" [ref=e5]
+    - list [ref=e6]:
+      - listitem:
+        - link:
+          - /url: ../walkthrough/chapter-1.html
+      - listitem:
+        - link:
+          - /url: ../bosses/index.html
+      - listitem [ref=e7]:
+        - button "中文" [ref=e9] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - link:
+        - /url: ../index.html
+      - text: ›
+      - link:
+        - /url: index.html
+      - text: ›
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e15]: 🐻
+        - generic:
+          - heading [level=1]
+          - paragraph
+      - generic [ref=e18]: ~3500
+      - generic [ref=e22]:
+        - heading [level=2]
+        - generic [ref=e23]:
+          - heading [level=3]
+          - paragraph
+        - generic [ref=e24]:
+          - heading [level=3]
+          - paragraph
+        - generic [ref=e25]:
+          - strong
+      - generic [ref=e26]:
+        - heading [level=3]
+        - list:
+          - listitem: ✦
+          - listitem: ✦
+          - listitem: ✦
+          - listitem: ✦
+          - listitem: ✦
+  - contentinfo [ref=e27]:
+    - paragraph [ref=e28]: "© 2026 Black Myth: Wukong Guide. All rights reserved."
+    - paragraph [ref=e29]: "This is a fan-made guide. Not affiliated with Game Science. Black Myth: Wukong is a trademark of Game Science."

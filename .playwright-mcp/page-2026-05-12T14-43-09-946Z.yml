@@ -1,0 +1,83 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation [ref=e3]:
+    - link "Wukong Guide" [ref=e4] [cursor=pointer]:
+      - /url: ../index.html
+    - button "Toggle menu" [ref=e5]
+    - list [ref=e6]:
+      - listitem:
+        - link:
+          - /url: ../walkthrough/chapter-1.html
+      - listitem:
+        - link:
+          - /url: ../bosses/index.html
+      - listitem [ref=e7]:
+        - button "中文" [ref=e9] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - link:
+        - /url: ../index.html
+      - text: › ›
+    - heading [level=1]
+    - paragraph
+    - separator [ref=e12]
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - heading [level=2]
+        - paragraph
+        - heading [level=3]
+        - list [ref=e16]:
+          - listitem [ref=e17]
+          - listitem [ref=e18]
+          - listitem [ref=e19]
+        - heading [level=3]
+        - list [ref=e20]:
+          - listitem [ref=e21]
+          - listitem [ref=e22]
+          - listitem [ref=e23]
+        - separator [ref=e24]
+        - heading [level=2]
+        - paragraph
+        - generic [ref=e25]:
+          - strong
+        - paragraph
+        - paragraph
+        - paragraph
+        - separator [ref=e26]
+        - heading [level=2]
+        - paragraph
+        - paragraph
+        - generic [ref=e27]:
+          - strong
+        - paragraph
+        - separator [ref=e28]
+        - heading [level=2]
+        - paragraph
+        - paragraph
+        - paragraph
+        - separator [ref=e29]
+        - heading [level=2]
+        - paragraph
+        - generic [ref=e30]:
+          - strong
+        - paragraph
+        - paragraph
+      - complementary [ref=e31]:
+        - heading [level=3]
+        - list [ref=e32]:
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: "#area-1"
+          - listitem [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: "#area-2"
+          - listitem [ref=e37]:
+            - link [ref=e38] [cursor=pointer]:
+              - /url: "#area-3"
+          - listitem [ref=e39]:
+            - link [ref=e40] [cursor=pointer]:
+              - /url: "#area-4"
+  - contentinfo [ref=e41]:
+    - paragraph [ref=e42]: "© 2026 Black Myth: Wukong Guide. All rights reserved."
+    - paragraph [ref=e43]: "This is a fan-made guide. Not affiliated with Game Science. Black Myth: Wukong is a trademark of Game Science."

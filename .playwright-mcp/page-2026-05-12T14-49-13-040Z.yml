@@ -1,0 +1,67 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation [ref=e3]:
+    - link "Wukong Guide" [ref=e4] [cursor=pointer]:
+      - /url: index.html
+    - button "Toggle menu" [ref=e5] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - heading "黑神话：悟空" [level=1] [ref=e11]
+      - paragraph [ref=e12]: 你的完整通关指南。流程攻略、Boss 打法和隐藏要素。
+    - generic [ref=e13]:
+      - heading "章节" [level=2] [ref=e14]
+      - generic [ref=e15]:
+        - link "第一章：火照黑云 从黑风山开启你的旅程。 ★★☆☆☆" [ref=e16] [cursor=pointer]:
+          - /url: walkthrough/chapter-1.html
+          - heading "第一章：火照黑云" [level=3] [ref=e17]
+          - paragraph [ref=e18]: 从黑风山开启你的旅程。
+          - generic [ref=e19]: ★★☆☆☆
+        - link "第二章：黄风岭 面对沙荒之地的考验。 ★★★☆☆" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+          - heading "第二章：黄风岭" [level=3] [ref=e21]
+          - paragraph [ref=e22]: 面对沙荒之地的考验。
+          - generic [ref=e23]: ★★★☆☆
+        - link "第三章：小西天 探索冰封的佛国。 ★★★☆☆" [ref=e24] [cursor=pointer]:
+          - /url: "#"
+          - heading "第三章：小西天" [level=3] [ref=e25]
+          - paragraph [ref=e26]: 探索冰封的佛国。
+          - generic [ref=e27]: ★★★☆☆
+        - link "第四章：盘丝洞 穿越危机四伏的蛛丝洞穴。 ★★★★☆" [ref=e28] [cursor=pointer]:
+          - /url: "#"
+          - heading "第四章：盘丝洞" [level=3] [ref=e29]
+          - paragraph [ref=e30]: 穿越危机四伏的蛛丝洞穴。
+          - generic [ref=e31]: ★★★★☆
+        - link "第五章：火焰山 勇闯灼热的火山地带。 ★★★★☆" [ref=e32] [cursor=pointer]:
+          - /url: "#"
+          - heading "第五章：火焰山" [level=3] [ref=e33]
+          - paragraph [ref=e34]: 勇闯灼热的火山地带。
+          - generic [ref=e35]: ★★★★☆
+        - link "第六章：未竟 最终对决在等待着你。 ★★★★★" [ref=e36] [cursor=pointer]:
+          - /url: "#"
+          - heading "第六章：未竟" [level=3] [ref=e37]
+          - paragraph [ref=e38]: 最终对决在等待着你。
+          - generic [ref=e39]: ★★★★★
+    - generic [ref=e40]:
+      - heading "精选 Boss" [level=2] [ref=e41]
+      - generic [ref=e42]:
+        - link "游荡的亡魂 森林中的强力早期Boss。" [ref=e43] [cursor=pointer]:
+          - /url: bosses/wandering-wight.html
+          - heading "游荡的亡魂" [level=3] [ref=e44]
+          - paragraph [ref=e45]: 森林中的强力早期Boss。
+        - link "金池长老 古庙的守护者。" [ref=e46] [cursor=pointer]:
+          - /url: bosses/elder-jinchi.html
+          - heading "金池长老" [level=3] [ref=e47]
+          - paragraph [ref=e48]: 古庙的守护者。
+        - link "黑熊精 第一章的最终Boss。" [ref=e49] [cursor=pointer]:
+          - /url: bosses/black-bear-spirit.html
+          - heading "黑熊精" [level=3] [ref=e50]
+          - paragraph [ref=e51]: 第一章的最终Boss。
+    - generic [ref=e52]:
+      - heading "刚接触黑神话：悟空？" [level=2] [ref=e53]
+      - paragraph [ref=e54]: 从我们的第一章攻略开始，获取必备技巧和策略。
+      - link "开始第一章" [ref=e55] [cursor=pointer]:
+        - /url: walkthrough/chapter-1.html
+  - contentinfo [ref=e56]:
+    - paragraph [ref=e57]: "© 2026 Black Myth: Wukong Guide. All rights reserved."
+    - paragraph [ref=e58]: "This is a fan-made guide. Not affiliated with Game Science. Black Myth: Wukong is a trademark of Game Science."
